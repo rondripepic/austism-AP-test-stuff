@@ -1,67 +1,101 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>AP Classes Hub</title>
 
-  <title>My Website</title>
-
-  <!-- 👇 PUT THE CSS HERE -->
   <style>
     body {
       font-family: Arial;
       background-color: #121212;
       color: white;
       text-align: center;
+      margin: 0;
+      padding: 20px;
     }
 
-    button {
-      padding: 10px 20px;
-      font-size: 16px;
-      background-color: #4CAF50;
-      border: none;
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    /* Layout container */
+    .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    /* Base AP button style */
+    .ap-button {
+      background: linear-gradient(135deg, #2193b0, #6dd5ed);
       color: white;
+      border: none;
+      padding: 12px 18px;
+      border-radius: 10px;
+      font-size: 14px;
       cursor: pointer;
+      transition: 0.25s;
     }
 
-  .custom-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.2s;
-  margin: 10px;
-  }
-  .APHuman-Button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.2s;
-  margin: 100px;
-  }
-
-  .custom-button:hover {
-    background-color: #3e8e41;
-    transform: scale(1.05);
-  }
+    /* Hover effect */
+    .ap-button:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 15px rgba(33, 147, 176, 0.6);
+    }
   </style>
-
 </head>
 
 <body>
 
-  <h1>Home Page</h1>
+  <h1>AP Classes Hub</h1>
 
-  <a href="page2.html">
-    <button>Go to Page 2</button>
-    <button class="custom-button">My Button</button>
-    <button class="APHuman-Button">AP Human Button</button>
-  </a>
+  <div class="button-container">
+
+    <button class="ap-button">AP Human Geography</button>
+    <button class="ap-button">AP World History</button>
+    <button class="ap-button">AP US History</button>
+    <button class="ap-button">AP Government</button>
+    <button class="ap-button">AP Macroeconomics</button>
+    <button class="ap-button">AP Microeconomics</button>
+    <button class="ap-button">AP Psychology</button>
+
+    <button class="ap-button">AP English Language</button>
+    <button class="ap-button">AP English Literature</button>
+
+    <button class="ap-button">AP Calculus AB</button>
+    <button class="ap-button">AP Calculus BC</button>
+    <button class="ap-button">AP Statistics</button>
+    <button class="ap-button">AP Precalculus</button>
+
+    <button class="ap-button">AP Biology</button>
+    <button class="ap-button">AP Chemistry</button>
+    <button class="ap-button">AP Physics 1</button>
+    <button class="ap-button">AP Physics 2</button>
+    <button class="ap-button">AP Physics C: Mechanics</button>
+    <button class="ap-button">AP Physics C: E&M</button>
+    <button class="ap-button">AP Environmental Science</button>
+
+    <button class="ap-button">AP Computer Science A</button>
+    <button class="ap-button">AP Computer Science Principles</button>
+
+    <button class="ap-button">AP Art History</button>
+    <button class="ap-button">AP Drawing</button>
+    <button class="ap-button">AP 2D Art & Design</button>
+    <button class="ap-button">AP 3D Art & Design</button>
+    <button class="ap-button">AP Music Theory</button>
+
+    <button class="ap-button">AP Spanish Language</button>
+    <button class="ap-button">AP French Language</button>
+    <button class="ap-button">AP German Language</button>
+    <button class="ap-button">AP Chinese Language</button>
+    <button class="ap-button">AP Japanese Language</button>
+    <button class="ap-button">AP Latin</button>
+
+    <button class="ap-button">AP Seminar</button>
+    <button class="ap-button">AP Research</button>
+
+  </div>
 
 </body>
 </html>
