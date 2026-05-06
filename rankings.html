@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Classes Ranked Tier List</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      background-color: #121212;
+      color: white;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    /* Each tier row */
+    .tier {
+      display: flex;
+      align-items: center;
+      margin: 10px auto;
+      width: 90%;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    /* Label on the left (S/A/B/etc.) */
+    .tier-label {
+      width: 60px;
+      font-weight: bold;
+      padding: 20px;
+      background-color: #333;
+    }
+
+    /* Content area */
+    .tier-content {
+      flex: 1;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 10px;
+      background-color: #1e1e1e;
+    }
+
+    /* Your class blocks */
+    .ap-button {
+      background: linear-gradient(135deg, #2193b0, #6dd5ed);
+      color: white;
+      border: none;
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      transition: 0.2s;
+    }
+
+    .ap-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px rgba(33, 147, 176, 0.6);
+    }
+
+    /* Tier colors */
+    .s { background-color: #ff4d4d; }
+    .a { background-color: #ff9900; }
+    .b { background-color: #ffd633; color: black; }
+    .c { background-color: #66cc66; }
+    .d { background-color: #cccccc; color: blue; }
+    .f { background-color: #f0f0f0; color: blueviolet; }
+    .depends { background-color: #e0e0e0; color: black; }
+  </style>
+</head>
+
+<body>
+
+<h1>AP Classes Tier List</h1>
+
+<!-- S Tier -->
+<div class="tier">
+  <div class="tier-label s">S</div>
+  <div class="tier-content">
+    <div class="ap-button">AP Physics C both</div>
+    <div class="ap-button">AP Chemistry</div>
+  </div>
+</div>
+
+<!-- A Tier -->
+<div class="tier">
+  <div class="tier-label a">A</div>
+  <div class="tier-content">
+    <div class="ap-button">AP Calculus BC</div>
+    <div class="ap-button">AP Biology</div>
+    <div class="ap-button">AP Physics 1 and 2</div>
+  </div>
+</div>
+
+<!-- B Tier -->
+<div class="tier">
+  <div class="tier-label b">B</div>
+  <div class="tier-content">
+    <div class="ap-button">AP US History</div>
+    <div class="ap-button">AP English Literature</div>
+    <div class="ap-button">AP English Language</div>
+    <div class="ap-button">AP World History</div>
+    <div class="ap-button">AP Calculus AB</div>
+  </div>
+</div>
+
+<!-- C Tier -->
+<div class="tier">
+  <div class="tier-label c">C</div>
+  <div class="tier-content">
+    <div class="ap-button">AP macroeconomics</div>
+    <div class="ap-button">AP Statistics</div>
+    <div class="ap-button">AP Government</div>
+    <div class="ap-button">AP Computer Science A</div>
+  </div>
+</div>
+    
+<!-- D Tier -->
+<div class="tier">
+  <div class="tier-label d">D</div>
+  <div class="tier-content">
+    <div class="ap-button">AP Microeconomics</div>
+    <div class="ap-button">AP Environmental Science</div>
+  </div>
+</div>
+
+<!-- F Tier -->
+<div class="tier">
+  <div class="tier-label f">F</div>
+  <div class="tier-content">
+    <div class="ap-button">AP research</div>
+    <div class="ap-button">AP Seminar</div>
+    <div class="ap-button">AP Computer Science Principles</div>
+    <div class="ap-button">AP Precalculus</div>
+    <div class="ap-button">AP psychology</div>
+    <div class="ap-button">AP Human Geography</div>
+  </div>
+</div>
+
+<!-- Depends Tier -->
+<div class="tier">
+  <div class="tier-label depends">Depends</div>
+  <div class="tier-content">
+    <button class="ap-button">AP Art History</button>
+    <button class="ap-button">AP Drawing</button>
+    <button class="ap-button">AP 2D Art & Design</button>
+    <button class="ap-button">AP 3D Art & Design</button>
+    <button class="ap-button">AP Music Theory</button>
+    <button class="ap-button">AP Spanish Language</button>
+    <button class="ap-button">AP French Language</button>
+    <button class="ap-button">AP German Language</button>
+    <button class="ap-button">AP Chinese Language</button>
+    <button class="ap-button">AP Japanese Language</button>
+    <button class="ap-button">AP Latin</button>
+  </div>
+</div>
+
+<!-- Back button -->
+<br>
+<button class="ap-button" onclick="history.back()">⬅ Back</button>
+
+</body>
+</html>
